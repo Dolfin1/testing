@@ -1,0 +1,151 @@
+/* Подключение файлов scss */
+/* Переменные */
+@import "variable.scss";
+/* Стили */
+@import "fonts";
+/* ------------------------ */
+/* Technical */
+html {
+	font-size: 8px;
+}
+
+.pages-wrapper {
+	background-color: #201F2E;
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	line-height: 21px;
+	font-size: var(--f-s-small);
+	color: #FFFFFF;	
+}
+.container {	
+	max-width: 1024px;
+	margin: 0 auto;
+}
+/* ------------------------ */
+ /* Header */
+
+.header { 
+	position: fixed;
+	width: 100%;
+	max-width: inherit;
+	z-index: 100;
+	background-color: #201F2E;
+	top: 0;
+	padding: 4rem 0rem;
+	
+	
+	&__wrapper {
+	
+	}
+
+	&__container {
+		padding: 0rem 4rem 0rem 4rem;
+	}
+
+	&__info {
+	}
+
+	&__title {
+	}
+
+	&__date {
+	}
+
+	&__logo {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&__image {
+
+	}
+}
+
+/* ------------------------ */
+ /* Main */
+
+.main {
+	overflow-y: auto;
+	padding-top: 122px;
+}
+
+.product-list { 
+	padding-bottom: 18px;
+}
+.card {
+	max-width: 336px;
+	position: relative;				
+
+		&--blackberry {
+				height: 420px;
+				background-image: url(../image/Main-blackberry.jpg);
+				background-size: cover;
+				border-radius: 32px;
+				object-fit: cover;
+				background-repeat: no-repeat;
+				padding: 352px 0px 0px 32px;
+			}
+	
+			&__description {
+				height: 80px;
+				width: 80px;
+				background-color:#0E0D13;
+				border-radius: 24px;
+				padding-top: 18px;
+				position: absolute;
+				top: 18px;
+				left: 18px;	
+			}
+	
+			&__info {
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 28px;
+				margin-left: 26px;
+				
+			}
+	
+			&__type {
+				font-size: 14px;
+				line-height: 16px;
+				color: #C4C1CF;
+				margin: 0px 8px 0px 11px;	
+			}
+	
+			&__name {
+			}
+	
+			&__style {
+			}
+	}
+	
+
+/* ------------------------ */
+ /* Footer */
+.footer {
+	position: fixed;
+	bottom: 0;
+	background-color: #0E0D13;
+	border-top-right-radius: 32px;
+	border-top-left-radius: 32px;
+	padding: 24px 0px 24px 32px;
+	width:100%;                                        
+
+		&__search {
+			background-color: #44414E;
+			padding: 14px 24px 14px 24px;
+			border-radius: 32px; 
+			display: inline-block; 
+		}
+
+		&__btn {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 17px;
+		}
+}
+/* ------------------------ */
